@@ -1,0 +1,38 @@
+.header{
+    font-family: 'Montserrat', sans-serif;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    &__btn{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+    }
+}
+.menu{
+    padding-left: 35px;
+    padding-right: 60px;
+    &__list{
+        display: flex;
+    }
+    &__list-item + .menu__list-item{
+        padding-left: 80px;
+    }
+    &__list-link{
+        @extend %title-font;
+        line-height: 22px;
+        font-size: 16px;
+        color: rgba(54, 56, 56, 0.9033);
+        transition: color .2s ease;
+        &:hover{
+            color: rgba(54, 56, 56, 1);
+        }
+    }
+}
+.logo{
+    margin: 0 auto;
+}
