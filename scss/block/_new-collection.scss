@@ -1,0 +1,29 @@
+.new-collection{
+    text-align: center;
+    padding: 45px 0 105px;
+
+    &__title{
+        color:$title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        position: relative;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+
+        &::after{
+            content: '';
+            width: 250px;
+            height: 1px;
+            background: #979797;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
+    &__text{
+        max-width: 730px;
+        margin: 0 auto 30px;
+    }
+}
