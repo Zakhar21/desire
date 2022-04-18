@@ -29,7 +29,27 @@ body{
   padding: 0 15px;
 }
 
-
+.slick-dots{
+    display: flex;
+	justify-content: center;
+	li{
+		padding: 0 15px;
+	}
+	button{
+		background-color: $title;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		border: none;
+		padding: 0;
+		font-size: 0;
+	}
+	li.slick-active{
+		button{
+			background-color: #FFEF35;
+		}
+	}
+}
 
 
 
