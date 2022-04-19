@@ -14,3 +14,6 @@ $('.top__slider').slick({
     fade:true,
     autoplay:true,
 });
+
+// mix
+let mixer = mixitup('.gallery__inner');
