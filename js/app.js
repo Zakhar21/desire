@@ -16,4 +16,11 @@ $('.top__slider').slick({
 });
 
 // mix
-let mixer = mixitup('.gallery__inner');
+let mixer = mixitup('.gallery__inner',{
+    animation: {
+        effectsIn: 'fade translateY(-100%)'
+    },
+    load: {
+        filter: '.bedroom'
+    }
+});
