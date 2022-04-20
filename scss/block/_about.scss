@@ -1,0 +1,55 @@
+.about{
+    &__prev{
+        background-image: url(../../img/about/placeholder.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        padding: 108px 0 160px;
+        text-align: center;
+        margin-top: -53px;
+    }
+    &__prev-title{
+        color:$title;
+        @extend %title-font;
+        font-size: 60px;
+        line-height: 80px;
+    }
+    &__content{
+        padding:130px 0 40px ;
+    }
+    &__title{
+        color:$title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 23px;
+
+        &::after{
+            content: '';
+            width: 200px;
+            height: 1px;
+            background: #979797;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__text{
+        padding-left: 284px;
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    &__popup{
+        background-image: url(../../img/about/video-mask.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        min-height: 414px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
