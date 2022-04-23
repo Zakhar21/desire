@@ -19,26 +19,6 @@
     &__info-text{
         margin-bottom: 16px;
     }
-    &__info-email{
-        display: inline-block;
-        font-weight: 600;
-        color:$title;
-        font-size: 14px;
-        margin-bottom: 22px;
-        padding-left: 30px;
-        position: relative;
-        &::before{
-            content: '';
-            background-image: url(../../img/icon/email.svg);
-            background-repeat: no-repeat;
-            width: 16px;
-            height: 12px;
-            position: absolute;
-            left: 0;
-            top:50%;
-            transform: translateY(-50%);
-        }
-    }
     &__form{
         display: flex;
         &-input{

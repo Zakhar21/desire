@@ -1,0 +1,29 @@
+.contact{
+    margin-bottom: 100px;
+    &__title{
+        color:$title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        position: relative;
+        padding-bottom: 25px;
+        margin-bottom: 40px;
+
+        &::after{
+            content: '';
+            width: 200px;
+            height: 1px;
+            background: #979797;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__social{
+        display: flex;
+        padding-left: 284px;
+    }
+    &__form{
+        padding-left: 284px;
+    }
+}
