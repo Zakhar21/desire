@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap");
-.collection__info-title, .menu__list-link, .rightside-menu__title, .footer__info-title, .top__slider-title, .new-collection__title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title, .about__prev-title, .about__title, .inspiration__title, .inspiration__item, .contact__title {
+.collection__info-title, .menu__list-link, .rightside-menu__title, .footer__info-title, .top__slider-title, .new-collection__title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title, .about__prev-title, .about__title, .inspiration__title, .inspiration__item, .contact__title, .contact-slider__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -1208,5 +1208,58 @@ body {
   border-radius: 21px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.contact-slider {
+  padding-bottom: 102px;
+}
+
+.contact-slider__link {
+  margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-slider__link:hover .contact-slider__title {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.contact-slider__img {
+  width: 170px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-slider__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  color: #363838;
+  line-height: 22px;
 }
 /*# sourceMappingURL=style.css.map */

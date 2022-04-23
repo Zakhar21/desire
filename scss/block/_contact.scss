@@ -91,3 +91,39 @@
         cursor: pointer;
     }
 }
+.contact-slider{
+    padding-bottom: 102px;
+    &__link{
+        margin-bottom: 35px;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .contact-slider__title{
+                transform: translateY(0%);
+            }
+        }
+    }
+    &__img{
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+    }
+    &__title{
+        position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: translateY(-100%);
+		background-color: rgba($color: #fff, $alpha: .7);
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: transform .5s ease;
+        color:$title;
+        @extend %title-font;
+        line-height: 22px;
+    }
+}
