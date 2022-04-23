@@ -1,5 +1,7 @@
 .contact{
     margin-bottom: 100px;
+    min-height: 0;
+    min-width: 0;
     &__title{
         color:$title;
         @extend %title-font;
@@ -19,11 +21,73 @@
             bottom: 0;
         }
     }
-    &__social{
+    .contact__social{
         display: flex;
         padding-left: 284px;
+        margin-bottom: 21px;
+    }
+    &__social-item{
+        &:not(:last-child){
+            margin-right: 38px;
+        }
+    }
+    &__box{
+        padding-left: 284px;
+    }
+    &__text{
+        margin-bottom: 10px;
+        color: #A1A1A1;
+    }
+    &__city{
+        margin-bottom: 16px;
     }
     &__form{
         padding-left: 284px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__from-input{
+        width: 49.3%;
+        border: 1px solid #DFDFDF;
+        border-radius: 20px;
+        padding: 6px 17px;
+        &:first-child{
+            margin-right: 11px;
+        }
+        &::placeholder{
+            font-family: 'Open Sans', sans-serif;
+	        font-size: 16px;
+	        line-height: 27px;
+	        font-weight: 400;
+	        color: #A1A1A1;
+        }
+    }
+    &__from-area{
+        width: 100%;
+        border: 1px solid #DFDFDF;
+        border-radius: 24px;
+        resize: none;
+        padding: 14px 17px;
+        min-height: 125px;
+        margin-top: 13px;
+        margin-bottom: 20px;
+        &::placeholder{
+            font-family: 'Open Sans', sans-serif;
+	        font-size: 16px;
+	        line-height: 27px;
+	        font-weight: 400;
+	        color: #A1A1A1;
+        }
+    }
+    &__from-btn{
+        background-color: $title;
+        color:#fff;
+        border: none;
+        padding: 6px 12px;
+        min-width: 157px;
+        border-radius: 21px;
+        font-weight: 600;
+        cursor: pointer;
     }
 }
