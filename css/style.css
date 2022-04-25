@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap");
-.collection__info-title, .menu__list-link, .rightside-menu__title, .footer__info-title, .top__slider-title, .new-collection__title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title, .about__prev-title, .about__title, .inspiration__title, .inspiration__item, .contact__title, .contact-slider__title {
+.collection__info-title, .menu__list-link, .rightside-menu__title, .footer__info-title, .top__slider-title, .new-collection__title, .decor__title, .works-path__title, .works-path__item-title, .blog-box__title, .blog-box__item-title, .about__prev-title, .about__title, .inspiration__title, .inspiration__item, .contact__title, .contact-slider__title, .blog-category-title, .resent-post__title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -1261,5 +1261,99 @@ body {
   transition: transform .5s ease, -webkit-transform .5s ease;
   color: #363838;
   line-height: 22px;
+}
+
+.blog {
+  padding: 60px 0 100px;
+}
+
+.blog-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-category {
+  margin-bottom: 36px;
+}
+
+.blog-category-title {
+  color: #363838;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+.blog-category-item {
+  margin-bottom: 12px;
+}
+
+.aside {
+  width: 350px;
+  margin-left: 30px;
+}
+
+.aside__search {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.aside__search-input {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  padding: 6px 56px 6px 18px;
+  border: 1px solid rgba(56, 54, 54, 0.7);
+}
+
+.aside__search-input::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #A1A1A1;
+}
+
+.aside__search-input:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #A1A1A1;
+}
+
+.aside__search-input::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #A1A1A1;
+}
+
+.aside__search-input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #A1A1A1;
+}
+
+.aside__search-btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 12px;
+  right: 19px;
+  cursor: pointer;
+}
+
+.resent-post__title {
+  color: #363838;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
